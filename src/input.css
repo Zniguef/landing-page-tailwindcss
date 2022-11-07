@@ -18,3 +18,55 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/** Media Query **/
+
+@media (max-width: 360px) {
+  .heading {
+    text-align: center;
+    font-size: 27px;
+  }
+
+  .first-para {
+    width: 85%;
+  }
+
+  .statistic,
+  .s2,
+  .email {
+    flex-direction: column;
+  }
+
+  .statistic > div:first-of-type {
+    margin-bottom: 50px;
+  }
+
+  .para,
+  .info,
+  .newsletter,
+  .s3-content {
+    width: 100%;
+  }
+
+  .s1,
+  .s2,
+  .s3,
+  .first-img {
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .s1,
+  .s3,
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  .email {
+    row-gap: 12px;
+  }
+
+  .subscribe-btn {
+    align-self: flex-end;
+  }
+}

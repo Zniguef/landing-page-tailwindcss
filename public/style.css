@@ -706,6 +706,11 @@ video {
   background-color: hsl(322 100% 66% / var(--tw-bg-opacity));
 }
 
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -714,6 +719,16 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .px-14 {
@@ -764,16 +779,6 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .text-center {
@@ -862,4 +867,56 @@ body {
 footer {
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/** Media Query **/
+
+@media (max-width: 360px) {
+  .heading {
+    text-align: center;
+    font-size: 27px;
+  }
+
+  .first-para {
+    width: 85%;
+  }
+
+  .statistic,
+  .s2,
+  .email {
+    flex-direction: column;
+  }
+
+  .statistic > div:first-of-type {
+    margin-bottom: 50px;
+  }
+
+  .para,
+  .info,
+  .newsletter,
+  .s3-content {
+    width: 100%;
+  }
+
+  .s1,
+  .s2,
+  .s3,
+  .first-img {
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .s1,
+  .s3,
+  footer {
+    flex-direction: column-reverse;
+  }
+
+  .email {
+    row-gap: 12px;
+  }
+
+  .subscribe-btn {
+    align-self: flex-end;
+  }
 }
