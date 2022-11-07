@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+}
+
+.screen-mockups {
+  width: 550px;
+}
+
+footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+}

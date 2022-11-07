@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page with tailwind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header
+      class="container mx-auto px-4 py-8 flex justify-between items-center"
+    >
+      <img class="w-36" src="./images/logo.svg" alt="logo" />
+      <button
+        class="border border-pinkColor text-pinkColor rounded-full px-5 py-1"
+      >
+        Try it free
+      </button>
+    </header>
+
+    <section class="flex flex-col justify-center items-center mt-20">
+      <h1 class="text-4xl font-bold">
+        Build The Community Your Fans Will Love
+      </h1>
+      <p class="my-6 text-center w-[40%] font-medium">
+        Huddle re-imagines the way we build communities. You have a voice, but
+        so does your audience. Create connections with your users as you engage
+        in genuine discussion.
+      </p>
+      <button
+        class="bg-pinkColor text-white px-14 py-3 rounded-full mb-10 border border-pinkColor"
+      >
+        Get Started For Free
+      </button>
+      <img
+        class="screen-mockups"
+        src="./images/screen-mockups.svg"
+        alt="screen-mockups"
+      />
+    </section>
+    <div class="flex justify-evenly items-center my-14">
+      <div class="flex flex-col">
+        <img
+          class="w-9"
+          src="./images/icon-communities.svg"
+          alt="icon-communities"
+        />
+        <span class="text-5xl font-bold my-4">1.4K+</span>
+        <span class="text-gray-500 text-sm text-center"
+          >Communities Formed</span
+        >
+      </div>
+      <div class="flex flex-col">
+        <img class="w-9" src="./images/icon-messages.svg" alt="icon-messages" />
+        <span class="text-5xl font-bold my-4">2.7m+</span>
+        <span class="text-gray-500 text-sm text-center">Messages Sent</span>
+      </div>
+    </div>
+    <section class="flex justify-between px-20">
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl font-bold mb-2">Grow Together</h2>
+        <p class="w-[450px] font-medium">
+          Generate meaningful discussions with your audience and build a strong,
+          loyal community. Think of the insightful conversations you miss out on
+          with a feedback form.
+        </p>
+      </div>
+      <div>
+        <img
+          class="!w-[350px]"
+          src="./images/illustration-grow-together.svg"
+          alt="illustration"
+        />
+      </div>
+    </section>
+    <section class="flex justify-between px-20 my-16">
+      <div>
+        <img
+          class="!w-[350px]"
+          src="./images/illustration-flowing-conversation.svg"
+          alt="illustration"
+        />
+      </div>
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl font-bold mb-2">Flowing Conversations</h2>
+        <p class="w-[450px] font-medium">
+          You wouldn't paginate a conversation in real life, so why do it
+          online? Our threads have just-in-time loading for a more natural flow.
+        </p>
+      </div>
+    </section>
+    <section class="flex justify-between px-20">
+      <div class="w-[50%] flex flex-col justify-center">
+        <h2 class="text-2xl font-bold mb-2">Your Users</h2>
+        <p class="w-[450px] font-medium">
+          It takes no time at all to integrate Huddle with your app's
+          authentication solution. This means, once signed in to your app, your
+          users can start chatting immediately.
+        </p>
+      </div>
+      <div class="!w-[350px]">
+        <img
+          class="w-[450px]"
+          src="./images/illustration-your-users.svg"
+          alt="illustration"
+        />
+      </div>
+    </section>
+    <div class="flex flex-col justify-center items-center my-24">
+      <h1 class="text-2xl font-bold">Ready To Build Your Community?</h1>
+      <button
+        class="bg-pinkColor text-white px-10 py-2 rounded-full my-5 border border-pinkColor"
+      >
+        Get Started For Free
+      </button>
+    </div>
+    <footer
+      style="
+        background-image: url('../public/images/bg-footer-top-desktop.svg');
+      "
+      class="flex justify-between items-center py-20 px-12"
+    >
+      <div class="w-[40%] py-6 px-4">
+        <img class="w-32" src="./images/logo.svg" alt="logo" />
+        <p class="my-4 font-medium text-sm text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
+          quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+        </p>
+        <div class="flex gap-x-2 text-white text-xs">
+          <img
+            class="w-3 h-3"
+            src="./images/icon-phone.svg"
+            alt="phone-image"
+          />
+          Phone: +1-543-123-4567
+        </div>
+        <div class="flex gap-x-2 text-white text-xs mt-2">
+          <img
+            class="w-3 h-3"
+            src="./images/icon-email.svg"
+            alt="email-image"
+          />
+          example@huddle.com
+        </div>
+        <div></div>
+      </div>
+      <div class="w-[40%] py-6 px-4 text-white">
+        <h4 class="text-3xl">Newsletter</h4>
+        <p class="my-6 text-sm font-normal w-[70%]">
+          To recieve tips on how to grow your community, sign up to our weekly
+          newsletter. We’ll never send you spam or pass on your email address
+        </p>
+        <div class="flex gap-x-5">
+          <input
+            class="outline-none rounded-md h-10 w-[300px] text-black px-2"
+            type="email"
+            name=""
+            id=""
+          />
+          <button class="bg-pinkColor text-white px-8 py-2 rounded-md">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
